@@ -14,7 +14,7 @@ public class TestLogin1 {
 	public String path = "C:\\Selenium\\driver\\chromedriver.exe";
 	public WebDriver driver;
 	Login1 objLogin;
-	String expectualString = "Sign in to GitHub  · GitHub";
+	String expectualString = "Sign in to GitHub  Â· GitHub-----------------hello";
 
 	@BeforeTest
 	public void openBrowser() {
