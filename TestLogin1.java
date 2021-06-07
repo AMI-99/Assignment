@@ -14,7 +14,7 @@ public class TestLogin1 {
 	public String path = "C:\\Selenium\\driver\\chromedriver.exe";
 	public WebDriver driver;
 	Login1 objLogin;
-	String expectualString = "Sign in to GitHub";
+	String expectualString = "Sign in to GitHub  · GitHub";
 
 	@BeforeTest
 	public void openBrowser() {
@@ -28,7 +28,7 @@ public class TestLogin1 {
 	@Test
 	public void testLogin1() {
 		driver.findElement(By.linkText("Sign in")).click();
-		objLogin.loginPageGithub("17521254@gm.uit.edu.vn", "@Khong");
+		objLogin.loginPageGithub("17521254@gm.uit.edu.vn", "@Khongconhom1");
 		System.out.println(driver.getTitle());
 		Assert.assertEquals(driver.getTitle(), expectualString);
 	}
