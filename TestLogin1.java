@@ -28,7 +28,7 @@ public class TestLogin1 {
 	@Test
 	public void testLogin1() {
 		driver.findElement(By.linkText("Sign in")).click();
-		objLogin.loginPageGithub("17521254@gm.uit.edu.vn", "@Khongconhom1");
+		objLogin.loginPageGithub("lelythuyvi.h214cla@gm.uit.edu.vn", "@Khongconhom1");
 		System.out.println(driver.getTitle());
 		Assert.assertEquals(driver.getTitle(), expectualString);
 	}
